@@ -1,4 +1,4 @@
-# 🚀 Strapi CMS Deployment on AWS using Terraform
+#  Strapi CMS Deployment on AWS using Terraform
 
 This project demonstrates deploying a **Strapi headless CMS** on **AWS EC2** using **Infrastructure as Code (IaC)** with **Terraform**.
 It is created as part of a DevOps assignment requiring:
@@ -11,7 +11,7 @@ It is created as part of a DevOps assignment requiring:
 
 ---
 
-## 📌 **Project Overview**
+##  **Project Overview**
 
 This setup deploys:
 
@@ -24,7 +24,7 @@ Terraform handles all cloud resources, while Docker Compose manages Strapi + Pos
 
 ---
 
-## 🏛️ **Architecture Diagram (Simple)**
+## **Architecture Diagram (Simple)**
 
 ```
 Terraform → AWS EC2 → Docker Compose → { Strapi + PostgreSQL }
@@ -32,7 +32,7 @@ Terraform → AWS EC2 → Docker Compose → { Strapi + PostgreSQL }
 
 ---
 
-## 📁 **Repository Structure**
+##  **Repository Structure**
 
 ```
 Strapi-project/
@@ -48,36 +48,36 @@ Strapi-project/
 └── README.md
 ```
 
-> ⚠️ Note: `tfstate` files are intentionally included because this is an assignment and no sensitive cloud keys are exposed.
+>  Note: `tfstate` files are intentionally included because this is an assignment and no sensitive cloud keys are exposed.
 
 ---
 
-## ⚙️ **Terraform Deployment Steps**
+##  **Terraform Deployment Steps**
 
-### 1️⃣ Clone the repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/Shantanu-2001/Strapi-project.git
 cd Strapi-project/infra
 ```
 
-### 2️⃣ Initialize Terraform
+### 2️. Initialize Terraform
 
 ```bash
 terraform init
 ```
 
-### 3️⃣ Review or update variables
+### 3️. Review or update variables
 
 (Inside `variables.tf` and `terraform.tfvars`)
 
-### 4️⃣ Deploy the infrastructure
+### 4️. Deploy the infrastructure
 
 ```bash
 terraform apply -auto-approve
 ```
 
-### 5️⃣ Get EC2 public IP
+### 5️. Get EC2 public IP
 
 ```bash
 terraform output
@@ -85,7 +85,7 @@ terraform output
 
 ---
 
-## 🌐 **Accessing Strapi**
+##  **Accessing Strapi**
 
 ### Admin Panel
 
@@ -103,7 +103,7 @@ After creating and publishing an article, your API returns structured JSON.
 
 ---
 
-## 🐳 **Docker Setup on EC2 (Automated)**
+##  **Docker Setup on EC2 (Automated)**
 
 Terraform user-data script installs:
 
@@ -118,7 +118,7 @@ Containers start automatically on EC2 boot.
 
 ---
 
-## 🔐 **Environment Variables Used**
+##  **Environment Variables Used**
 
 The following are passed into Docker from Terraform:
 
@@ -133,7 +133,7 @@ The following are passed into Docker from Terraform:
 
 ---
 
-## 🧪 **Testing the API**
+##  **Testing the API**
 
 Once Strapi is ready:
 
@@ -156,24 +156,7 @@ Example JSON:
 
 ---
 
-## 🎥 **Video Demo (Required for Assessment)**
-
-A Loom screencast is included demonstrating:
-
-* Terraform code
-* AWS deployment
-* EC2 initialization
-* Strapi setup
-* API test
-* Your face visible
-
-> Replace the URL below with your Loom video link:
-
-🔗 **Loom Video:** *<Your Loom link here>*
-
----
-
-## 🧑‍💻 **Technologies Used**
+##  **Technologies Used**
 
 * Terraform
 * AWS EC2
@@ -185,15 +168,7 @@ A Loom screencast is included demonstrating:
 
 ---
 
-## 👨‍🎓 **Author**
-
-**Shantanu Rana**
-GitHub: [https://github.com/Shantanu-2001](https://github.com/Shantanu-2001)
-Email: [pradipshantanu@gmail.com](mailto:pradipshantanu@gmail.com)
-
----
-
-## ✅ **Conclusion**
+##  **Conclusion**
 
 This project successfully demonstrates:
 
@@ -207,4 +182,3 @@ A complete DevOps workflow from provisioning → deployment → testing ✔️
 
 ---
 
-### If you want a **professional architecture diagram image**, tell me — I can generate one.
