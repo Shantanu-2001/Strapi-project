@@ -178,7 +178,7 @@ This project successfully demonstrates:
 * Production-ready Strapi instance
 * Working API endpoint
 
-A complete DevOps workflow from provisioning → deployment → testing ✔️
+A complete DevOps workflow from provisioning → deployment → testing ️
 
 ---
 
